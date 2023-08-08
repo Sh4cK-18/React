@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div>
       <nav className="bg-white border-gray-200 shadow-xl">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
           <a href="#" className="flex items-center">
             <img
               width={60}

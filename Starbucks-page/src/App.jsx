@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="w-full h-full p-4 bg-white mt-7">
+      <div className="w-full h-full p-10 bg-white mt-7">
         <div className="grid grid-cols-1 xl:grid-cols-2 justify-items-center">
           <div>
             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-85023.jpg"></img>
