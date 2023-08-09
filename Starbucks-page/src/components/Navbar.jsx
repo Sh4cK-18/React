@@ -1,5 +1,6 @@
-export default function Navbar() {
+import { Link } from "react-router-dom";
 
+export default function Navbar() {
   function toogleNavbar() {
     const navbar = document.getElementById("navbar-cta");
     if (navbar.classList.contains("hidden")) {
@@ -8,12 +9,12 @@ export default function Navbar() {
       navbar.classList.add("hidden");
     }
   }
-  
+
   return (
     <div>
       <nav className="bg-white border-gray-200 shadow-xl">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               width={60}
               height={60}
@@ -21,23 +22,25 @@ export default function Navbar() {
               className="h-8 mr-3"
               alt="Starbucks Logo"
             ></img>
-            {/*  <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              Starbucks
-            </span> */}
-          </a>
+            </Link>
+
           <div className="flex md:order-2">
-            <button
-              type="button"
-              className="text-black bg-white border-2 hover:bg-slate-200 border-black  focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4  py-1 text-center mr-3 md:mr-3 "
-            >
-              Sign in
-            </button>
-            <button
-              type="button"
-              className="text-white bg-black hover:bg-gray-600 focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4 py-1 text-center mr-3 md:mr-3 "
-            >
-              Join now
-            </button>
+            <Link to="/singin">
+              <button
+                type="button"
+                className="text-black bg-white border-2 hover:bg-slate-200 border-black  focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4  py-1 text-center mr-3 md:mr-3 "
+              >
+                Sign in
+              </button>
+            </Link>
+            <Link to="/register">
+              <button
+                type="button"
+                className="text-white bg-black hover:bg-gray-600 focus:ring-4 focus:outline-none font-medium rounded-2xl text-sm px-4 py-1 text-center mr-3 md:mr-3 "
+              >
+                Join now
+              </button>
+            </Link>
             <button
               data-collapse-toogle="navbar-cta"
               type="button"
