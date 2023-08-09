@@ -90,7 +90,7 @@ export default function Singin() {
                 className=" text-[#00754a] font-bold py-2 px-3 text-sm sm:text-2xl rounded-full hover:cursor-pointer"
                 onClick={showPassword}
               >
-                {!showPass ? <LuEyeOff /> : <LuEye />}
+                {showPass ? <LuEyeOff /> : <LuEye />}
               </button>
             </div>
           </section>
@@ -132,8 +132,6 @@ export default function Singin() {
             <button
               onClick={handleClick}
               type="button"
-              data-modal-target="staticModal"
-              data-modal-toggle="staticModal"
               className="text-white bg-[#00754a] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-300 font-bold rounded-full md:text-xl md:px-5 md:py-3 text-center px-3 py-2"
             >
               Sing in
