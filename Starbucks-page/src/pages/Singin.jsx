@@ -90,7 +90,7 @@ export default function Singin() {
                 className=" text-[#00754a] font-bold py-2 px-3 text-sm sm:text-2xl rounded-full hover:cursor-pointer"
                 onClick={showPassword}
               >
-                {!showPass ? <LuEyeOff /> : <LuEye />}
+                {showPass ? <LuEyeOff /> : <LuEye />}
               </button>
             </div>
           </section>
