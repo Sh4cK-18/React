@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 
 export default function NoFoundPage() {
   return (
-    <div className="w-full h-[100vh] bg-[#1e1b4b] grid items-center p-10">
+    <div className="w-full h-screen bg-[#1e1b4b] grid items-center">
       <div className="text-center flex flex-wrap flex-col gap-8">
         <h1 className="text-4xl font-thin text-white">
-          Upps something went wrong
+          Ups something went wrong
         </h1>
 
-        <p className="text-lg text-gray-300">
-          Take a cup of coffee and try again later ☕
-        </p>
+        <div className="flex justify-center items-center">
+          <p className="text-lg text-gray-300">
+            Take a cup of coffee and try again later
+          </p>
+
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9246/9246639.png"
+            className="w-[40px] h-fit"
+          />
+        </div>
 
         <Link to="/">
           <button
